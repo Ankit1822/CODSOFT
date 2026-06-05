@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #2563EB;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo h2{
+    font-size: 30px;
+}
+.logo img{
+    height: 70px;
+    width: auto;
+}
+nav h2 {
+    color: #ffff;
+}
+
+span {
+    color: #1c1c1c;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding-left: 45px;
+    margin-left: 20px;
+}
+
+ul li {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #1c1c1c;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(
+        to bottom,
+        #f8fafc,
+        #e0ecff
+    );
+    /* background-color: #f8fafc; */
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.hero button{
+    margin-top: 25px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #2563EB;
+    color: #ffff;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.popularCourse {
+    padding: 0 30px;
+    font-size: 29px;
+    text-align: center;
+    background-color: #f8fafc;
+    color: #1f2937;
+    padding-top: 10px;
+}
+
+.course {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f8fafc;
+    color: #1f2937;
+}
+
+.Card {
+    width: 300px;
+    min-height: 200px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    text-align: center;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    transition: 0.3s;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    min-height: 180px;
+
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.CTA {
+    background-color: #2563EB;
+    color: #ffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.CTA button {
+    background-color: #ffffff;
+    color: #2563EB;
+    font-weight: bold;
+}
+
+.CTA button:hover {
+    background-color: #1f2937;
+    color: #ffffff;
+
+}
+
+.about {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8fafc;
+    color: #1f2937;
+}
+
+.about p{
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #1f2937;
+    color: white;
+}
+
+footer a:hover {
+    color: #808080;
+}
+
+@media(max-width:768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .logo img{
+        height: 50px;
+        width: auto;
+        border-radius: 8px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .course,
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Card,
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
